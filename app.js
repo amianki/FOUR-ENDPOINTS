@@ -17,6 +17,9 @@ app.get('/contact',(req,res)=>{
 app.get('/career',(req,res)=>{
     res.sendFile(__dirname + "/career.html");
 })
+app.get('*',(req,res)=>{
+    res.sendFile(__dirname + "/pagenotfound.html");
+})
 app.listen(port,()=>{
     console.log('Running in the port of 3000');
 })
