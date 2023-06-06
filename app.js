@@ -12,6 +12,7 @@ app.get('/about',(req,res)=>{
 })
 app.get('/contact',(req,res)=>{
     res.sendFile(__dirname + "/contact.html");
+    console.log("This is get contact ");
 })
 app.get('/career',(req,res)=>{
     res.sendFile(__dirname + "/career.html");
